@@ -1,0 +1,7 @@
+@import '../options.styles.scss';
+
+.countryPicker{
+    .countryPickerLogo{
+        @include logo();
+    }
+}

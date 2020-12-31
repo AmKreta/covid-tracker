@@ -1,0 +1,46 @@
+@import '../../components.styles.scss';
+
+.appLogo {
+    font-family: $regularText;
+    color: $pink;
+    font-size: clamp(30px, 3vw, 50px);
+    height: 100%;
+    text-align: left;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+
+    .logoImage {
+        max-height: 100%;
+        max-width: 100%;
+        transition: filter 5s ease-in-out;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        animation-name:hueRotate;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-fill-mode: both;
+    }
+
+    .appLogoIcon {
+        color: $pink;
+        position: relative;
+    }
+}
+
+@keyframes hueRotate {
+    from {
+        filter: hue-rotate(0deg);
+        transform: scale(0.8) rotate(0deg);
+    }
+
+    to {
+        filter: hue-rotate(360deg);
+        transform: scale(1) rotate(360deg);
+    }
+}

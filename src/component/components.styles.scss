@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+$styledText:'Yellowtail',
+cursive;
+$regularText:'Varela Round',
+sans-serif;
+$pink:#D70668;
+
+$tab:768px;
+$phone:500px;
+
+body {
+    color: rgba(0, 0, 0, .8);
+}

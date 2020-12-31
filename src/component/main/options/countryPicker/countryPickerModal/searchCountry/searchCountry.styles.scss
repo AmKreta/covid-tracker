@@ -1,0 +1,11 @@
+@import '../../../../../components.styles.scss';
+
+.searchCountry{
+    margin-top:10px;
+}
+
+@media only screen and ( amx-width: $phone){
+    .searchCountry{
+        margin-top:15px;
+    }
+}

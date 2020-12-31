@@ -1,0 +1,16 @@
+@import '../components.styles.scss';
+
+.appFooter{
+    display:none;
+}
+
+@media only screen and ( max-width : $phone ){
+    .appFooter{
+        height:8%;
+        background:rgb(237, 47, 84);
+        display:flex;
+        justify-content:center;
+        align-items:stretch;
+        color:white;
+    }
+}

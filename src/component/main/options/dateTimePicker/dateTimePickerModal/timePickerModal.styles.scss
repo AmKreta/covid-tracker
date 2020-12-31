@@ -1,0 +1,72 @@
+@import '../../../../components.styles.scss';
+@import '../../options.styles.scss';
+
+.dateTimePickerModal {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .dateTimePickerModalClosingIcon {
+        height: 30px;
+        width: 30px;
+        margin: Min(10px, 2%);
+        position: absolute;
+        right: 0;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:active {
+            transform: scale(.9);
+        }
+    }
+
+    .dateTimeSelector {
+        background: yellow;
+
+        .selectDateLabel {
+            background-color: rgba(66, 133, 244, 1);
+            height: 40px;
+            width: 120px;
+            margin: auto;
+            margin-top: 20%;
+            padding-top: 10px;
+            border-radius: 5px;
+            color: white;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:active {
+                background-color: rgba(66, 133, 244, .6);
+            }
+        }
+
+        .selectedDate{
+            margin-top:8%;
+            font-size:1.3em;
+        }
+
+        .dateInput {
+            margin:auto;
+            margin-top:2%;
+        }
+    }
+}
+
+@media only screen and (max-width: $phone) {
+    .dateTimePickerModal {
+        width: 96%;
+
+        .dateTimePickerModalClosingIcon {
+            height: 30px;
+            width: 30px;
+        }
+    }
+}

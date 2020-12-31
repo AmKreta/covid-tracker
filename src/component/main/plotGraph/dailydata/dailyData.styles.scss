@@ -1,0 +1,42 @@
+.dailyData {
+    .dailyDataCountry {
+        background-color: #4285F4;
+        border-radius: 5px;
+        color: white;
+        text-transform: capitalize;
+        font-weight: bold;
+        font-size: 2em;
+    }
+
+    .dailyDataTable {
+
+        &,
+        & td,
+        & th {
+            border: 1px solid rgba(0, 0, 0, .4);
+        }
+
+        border-collapse: collapse;
+        font-size:1.3em;
+        margin-top:5%;
+
+        & th {
+            font-weight: normal;
+            padding:10px;
+        }
+
+        & td {
+            padding: 10px;
+        }
+
+        & thead,
+        & tr:nth-child(2) {
+            background-color: rgba(0, 0, 0, .2)
+        }
+    }
+
+    .dailyDataDate {
+        margin-top:4%;
+        font-size:1.3em;
+    }
+}

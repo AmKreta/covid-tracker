@@ -1,0 +1,15 @@
+@import '../components.styles.scss';
+
+.appHeader{
+    height:10%;
+    display:flex;
+    align-items:stretch;
+    justify-content:space-between;
+    padding:1vh 2vw;
+}
+
+@media only screen and ( max-width : $tab ){
+    .appHeader{
+        height:8%;
+    }
+}

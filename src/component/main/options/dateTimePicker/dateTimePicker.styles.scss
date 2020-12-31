@@ -1,0 +1,7 @@
+@import '../options.styles.scss';
+
+.dateTimePicker{
+    .dateTimePickerLogo{
+       @include logo();
+    }
+}

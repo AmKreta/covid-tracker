@@ -1,0 +1,28 @@
+@import '../../components.styles.scss';
+
+@mixin logo {
+    height: 70px;
+    width: 70px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:active {
+        transform: scale(.9);
+    }
+}
+
+.options {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow:row wrap;
+}
+
+@media only screen and (max-width: $phone) {
+    .options {
+        position: static;
+    }
+}
